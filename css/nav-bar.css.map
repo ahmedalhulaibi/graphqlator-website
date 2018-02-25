@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,QAAQ,AAAC,CACL,OAAO,CAAE,WAAW,CACpB,SAAS,CAAE,GAAG,CACd,MAAM,CAAE,GAAG,CACX,UAAU,CAAE,MAAM,CAClB,OAAO,CAAE,IAAI,CAChB",
+    "mappings": "AACA,AAAA,QAAQ,AAAC,CACL,OAAO,CAAE,WAAW,CACpB,SAAS,CAAE,GAAG,CACd,MAAM,CAAE,GAAG,CACX,UAAU,CAAE,MAAM,CAClB,OAAO,CAAE,IAAI,CAUhB,AAfD,AAMM,QANE,CAMF,cAAc,AAAC,CACb,WAAW,CAAE,kBAAkB,CAC/B,OAAO,CAAE,aAAa,CAMzB,AAdL,AASU,QATF,CAMF,cAAc,CAGV,QAAQ,AAAC,CACP,KAAK,CCLL,IAAI,CDMJ,WAAW,CAAE,oBAAoB,CACjC,SAAS,CAAE,IAAI,CAClB",
     "sources": [
-        "../scss/nav-bar.scss"
+        "../scss/nav-bar.scss",
+        "../scss/_colors.scss"
     ],
     "names": [],
     "file": "nav-bar.css"

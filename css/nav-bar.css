@@ -1,2 +1,2 @@
-.nav-bar{display:inline-flex;flex-flow:row;margin:1px;text-align:center;padding:10px}
+.nav-bar{display:inline-flex;flex-flow:row;margin:1px;text-align:center;padding:10px}.nav-bar>.verticalbreak{border-left:thin solid #000000;padding:0 10px 0 10px}.nav-bar>.verticalbreak>.navlink{color:#000;font-family:'Roboto', sans-serif;font-size:12px}
 /*# sourceMappingURL=nav-bar.css.map */

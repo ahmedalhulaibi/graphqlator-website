@@ -1,17 +1,25 @@
-.header {
+header {
     display: inline-flex;
     flex-flow: row;
-    background: rgba(242, 242, 242, 0.248);
     width: 100%;
     &.-overlay {
         position: fixed;
         padding: 10px;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 64px;
+        z-index: 60;
     }
     &.-anchored {
         position: static;
     }
 }
 
-body {
+main {
     width: 100%;
+}
+
+body {
+    background-color: $page-backgroundColor;
 }

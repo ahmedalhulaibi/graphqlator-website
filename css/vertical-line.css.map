@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,cAAc,AAAC,CACX,WAAW,CAAE,kBAAkB,CAC/B,OAAO,CAAE,aAAa,CACvB",
+    "mappings": "AAAA,AAAA,cAAc,AAAC,CACX,WAAW,CAAE,kBAAkB,CAC/B,OAAO,CAAE,aAAa,CACzB",
     "sources": [
         "../scss/vertical-line.scss"
     ],

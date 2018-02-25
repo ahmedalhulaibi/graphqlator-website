@@ -1,2 +1,2 @@
-.header{display:inline-flex;flex-flow:row;background:rgba(242,242,242,0.248);width:100%}.header.-overlay{position:fixed;padding:10px}.header.-anchored{position:static}body{width:100%}
+header{display:inline-flex;flex-flow:row;width:100%}header.-overlay{position:fixed;padding:10px;left:0;right:0;top:0;height:64px;z-index:60}header.-anchored{position:static}main{width:100%}body{background-color:#ffffff}
 /*# sourceMappingURL=tag-override.css.map */

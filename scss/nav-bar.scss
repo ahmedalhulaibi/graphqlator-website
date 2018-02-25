@@ -1,7 +1,17 @@
+@import 'colors';
 .nav-bar {
     display: inline-flex;
     flex-flow: row;
     margin: 1px;
     text-align: center;
     padding: 10px;
+    > .verticalbreak {
+        border-left: thin solid #000000;
+        padding: 0 10px 0 10px;
+        > .navlink {
+            color: $paraColor;
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+        }
+    }
 }

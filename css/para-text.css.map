@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,UAAU,AAAC,CACP,KAAK,CAAE,OAAe,CACtB,WAAW,CAAE,oBAAoB,CACjC,SAAS,CAAE,IAAI,CAClB",
+    "mappings": "AACA,AAAA,UAAU,AAAC,CACP,KAAK,CCIG,IAAI,CDHZ,WAAW,CAAE,oBAAoB,CACjC,SAAS,CAAE,IAAI,CAClB",
     "sources": [
-        "../scss/para-text.scss"
+        "../scss/para-text.scss",
+        "../scss/_colors.scss"
     ],
     "names": [],
     "file": "para-text.css"
