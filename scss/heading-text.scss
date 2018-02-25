@@ -1,0 +1,28 @@
+.heading-text {
+    color: rgb(124, 56, 220);
+    &.-xlarge { 
+        text-align: lext;
+        font-size: 40px;
+        font-weight: 400;
+        font-family: 'Roboto Condensed', sans-serif;
+        margin: 0;
+    }
+    &.-large {
+        text-align: left;
+        font-size: 30px;
+        font-weight: 300;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    &.-medium {
+        text-align: left;
+        font-size: 25px;
+        font-weight: 100;
+        font-family: 'Roboto', sans-serif;
+    }
+    &.-small {
+        text-align: left;
+        font-size: 20px;
+        font-weight: 100;
+        font-family: 'Roboto', sans-serif;
+    }
+}

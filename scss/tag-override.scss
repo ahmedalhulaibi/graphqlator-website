@@ -1,0 +1,17 @@
+.header {
+    display: inline-flex;
+    flex-flow: row;
+    background: rgba(242, 242, 242, 0.248);
+    width: 100%;
+    &.-overlay {
+        position: fixed;
+        padding: 10px;
+    }
+    &.-anchored {
+        position: static;
+    }
+}
+
+body {
+    width: 100%;
+}

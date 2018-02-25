@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,AAAC,CACX,WAAW,CAAE,kBAAkB,CAC/B,OAAO,CAAE,aAAa,CACvB",
+    "sources": [
+        "../scss/vertical-line.scss"
+    ],
+    "names": [],
+    "file": "vertical-line.css"
+}

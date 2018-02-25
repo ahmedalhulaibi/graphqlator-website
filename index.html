@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphqlator Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link href="css/tag-override.css" rel="stylesheet">
+    <link href="css/heading-text.css" rel="stylesheet">
+    <link href="css/code-snippet.css" rel="stylesheet">
+    <link href="css/para-text.css" rel="stylesheet">
+    <link href="css/nav-bar.css" rel="stylesheet">
+    <link href="css/vertical-line.css" rel="stylesheet">
+</head>
+<main>
+    <header class="header -anchored">
+        <div>
+            <h1 class="heading-text mono -xlarge">Graphqlator </h1>
+            <nav class="nav-bar">
+                <div class="vertical-line"><a class="para-text" href="#Overview">Overview</a></div>            
+                <div class="vertical-line"><a class="para-text" href="#Getting Started">Getting Started</a></div>
+            </nav>
+        </div>
+    </header>
+    <body>
+        <h1 id="Overview" class="heading-text -large">Overview</h1>
+        <h2 class="heading-text -medium">What is Graphqlator?</h2>
+        <p class="para-text">Graphqlator generates a GraphQL API implemented in Go.</p>
+        <h2 class="heading-text -medium">How does it work?</h2>
+        <p class="para-text">Graphqlator uses your existing database table schema(s) to generate the server.</p>
+        <h1 id="Getting Started" class="heading-text -large">Getting Started</h1>
+        <h2 class="heading-text -medium">Installation</h2>
+        <h3 class="heading-text -small">Install using go get</h3>
+        <div class="code-snippet">
+            <code class="code-text">go get github.com/ahmedalhulaibi/graphqlator</code>
+        </div>
+        <h3 class="heading-text -small"><a href="https://github.com/ahmedalhulaibi/graphqlator/releases">Download Pre-Built Binaries from GitHub</a></h3>
+        <h2 class="heading-text -medium">Prerequisites</h2>
+        <p class="para-text">Mandatory prerequisites:</p>
+        <ul class="para-text">
+            <li><a href="https://golang.org/">Go</a></li>
+            <li><a href="https://github.com/jinzhu/gorm/">GORM</a></li>
+            <li><a href="https://github.com/neelance/graphql-go/">GraphQL Go</a></li>
+        </ul>
+        <p class="para-text">One of the following databases:</p>
+        <ul class="para-text">
+            <li><a href="https://www.mysql.com/">MySQL</a></li>
+            <li><a href="https://mariadb.org/">MariaDB</a> </li>
+            <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+        </ul>
+    </body>
+    <script src="js/app.js"></script>
+</main>
+</html>

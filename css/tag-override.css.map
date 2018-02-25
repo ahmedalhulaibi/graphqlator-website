@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,AAAC,CACJ,OAAO,CAAE,WAAW,CACpB,SAAS,CAAE,GAAG,CACd,UAAU,CAAE,uBAA0B,CACtC,KAAK,CAAE,IAAI,CAQd,AAZD,AAKI,OALG,AAKH,SAAU,AAAC,CACP,QAAQ,CAAE,KAAK,CACf,OAAO,CAAE,IAAI,CAChB,AARL,AASI,OATG,AASH,UAAW,AAAC,CACR,QAAQ,CAAE,MAAM,CACnB,AAGL,AAAA,IAAI,AAAC,CACD,KAAK,CAAE,IAAI,CACd",
+    "sources": [
+        "../scss/tag-override.scss"
+    ],
+    "names": [],
+    "file": "tag-override.css"
+}
