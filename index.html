@@ -18,37 +18,100 @@
     <header class="-anchored">
             <h1 class="heading-text mono -xlarge">Graphqlator </h1>
             <nav class="nav-bar">
-                <div class="verticalbreak"><a class="navlink" href="#Overview">Overview</a></div>            
+                <div class="verticalbreak"><a class="navlink" href="#Overview">Overview</a></div>
                 <div class="verticalbreak"><a class="navlink" href="#Getting Started">Getting Started</a></div>
+                <div class="verticalbreak"><a class="navlink" href="#Basic Tutorial">Basic Tutorial</a></div>
             </nav>
     </header>
+    <hr>
     <main>
-        <h1 id="Overview" class="heading-text -large">Overview</h1>
-        <h2 class="heading-text -medium">What is Graphqlator?</h2>
-        <p class="para-text">Graphqlator generates a GraphQL API implemented in Go.</p>
-        <h2 class="heading-text -medium">How does it work?</h2>
-        <p class="para-text">Graphqlator uses your existing database table schema(s) to generate the server.</p>
-        <h1 id="Getting Started" class="heading-text -large">Getting Started</h1>
-        <h2 class="heading-text -medium">Installation</h2>
-        <h3 class="heading-text -small">Install using go get</h3>
-        <div class="code-snippet">
-            <code class="code-text">go get github.com/ahmedalhulaibi/graphqlator</code>
-        </div>
-        <h3 class="heading-text -small"><a href="https://github.com/ahmedalhulaibi/graphqlator/releases">Download Pre-Built Binaries from GitHub</a></h3>
-        <h2 class="heading-text -medium">Prerequisites</h2>
-        <p class="para-text">Mandatory prerequisites:</p>
-        <ul class="para-text">
-            <li><a href="https://golang.org/">Go</a></li>
-            <li><a href="https://github.com/jinzhu/gorm/">GORM</a></li>
-            <li><a href="https://github.com/neelance/graphql-go/">GraphQL Go</a></li>
-        </ul>
-        <p class="para-text">One of the following databases:</p>
-        <ul class="para-text">
-            <li><a href="https://www.mysql.com/">MySQL</a></li>
-            <li><a href="https://mariadb.org/">MariaDB</a> </li>
-            <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-        </ul>
-    </main>
+        <section>
+                <h1 id="Overview" class="heading-text -large">Overview</h1>
+                <h2 class="heading-text -medium">What is Graphqlator?</h2>
+                <p class="para-text">Graphqlator generates a GraphQL API implemented in Go.</p>
+                <h2 class="heading-text -medium">How does it work?</h2>
+                <p class="para-text">Graphqlator uses your existing database table schema(s) to generate a generic GraphQL API server implemented in go.</p>
+        </section>
+        <hr>
+        <section>
+            <h1 id="Getting Started" class="heading-text -large">Getting Started</h1>
+            <h2 class="heading-text -medium">Prerequisites</h2>
+            <ul class="para-text">
+                <li>Install <a href="https://golang.org/doc/install">Go</a></li>
+                <li>go get <a href="https://github.com/jinzhu/gorm/">GORM</a></li>
+                <li>go get <a href="https://github.com/neelance/graphql-go/">GraphQL Go</a></li>
+            </ul>
+            <p class="para-text">One of the following databases running locally:</p>
+            <ul class="para-text">
+                <li><a href="https://dev.mysql.com/doc/mysql-getting-started/en/">MySQL</a></li>
+                <li><a href="https://mariadb.com/products/get-started">MariaDB</a> </li>
+                <li><a href="https://www.postgresql.org/docs/10/static/tutorial-start.html">PostgreSQL</a></li>
+            </ul>
+            <h2 class="heading-text -medium">Graphqlator Installation</h2>
+            <h3 class="heading-text -small">Install using go get</h3>
+            <div class="code-snippet">
+                <code class="code-text">go get github.com/ahmedalhulaibi/graphqlator</code>
+            </div>
+            <h3 class="heading-text -small"><a href="https://github.com/ahmedalhulaibi/graphqlator/releases">Download Pre-Built Binaries from GitHub</a></h3>
+        </section>
+        <hr>
+        <section>
+            <h1 id="Basic Tutorial" class="heading-text -large">Basic Tutorial</h1>
+            <p class="para-text">
+                Make sure you have installed all the <a class="navlink" href="#Getting Started">prerequisites</a>.
+            </p>
+            <hr>
+            <h2 class="heading-text -medium">Define Database Table Schema</h2>
+            <p class="para-text">
+                If you already have an existing database with one or more tables defined you can skip this step.                
+            </p>
+            <h3 class="heading-text -small">MySQL</h3>
+            <p class="para-text">
+                Follow the instructions 
+                <a href="https://dev.mysql.com/doc/mysql-getting-started/en/#mysql-getting-started-connecting">
+                    here to connect to your MySQL Server, create a database and create a table.
+                </a>
+            </p>
+            <h3 class="heading-text -small">MariaDB</h3>
+            <p class="para-text">
+                Follow the instructions 
+                <a href="https://mariadb.com/kb/en/library/mariadb-basics/">
+                    here to connect to your MariaDB Server, create a database and create a table.
+                </a>
+            </p>
+            <h3 class="heading-text -small">PostgreSQL</h3>
+            <p class="para-text">
+                Follow the instructions 
+                <a href="https://www.postgresql.org/docs/10/static/tutorial-createdb.html">here to create a PostgresQL database.</a>
+            </p>
+            <p class="para-text">
+                Follow the instructions 
+                <a href="https://www.postgresql.org/docs/10/static/tutorial-accessdb.html">here to access your PostgresQL database.</a>
+            </p>
+            <p class="para-text">
+                Follow the instructions 
+                <a href="https://www.postgresql.org/docs/10/static/tutorial-table.html">here to create a table in your PostgresQL database.</a>
+            </p>
+            <hr>
+            <h2 class="heading-text -medium">Graphqlator Walkthrough</h2>
+            <h3 class="heading-text -small"></h3>
+            <p class="para-text">First we will make sure have graphqlator installed.</p>
+            <p class="para-text">
+                <div class="code-snippet">
+                    <code class="code-text">$ graphqlator version<br></code>
+                    <code class="code-text">Graphqlator GraphQL Generator v0.3.3-alpha</code>
+                </div>
+            </p>
+            <p class="para-text">
+                If you do not see output or get a command not found error:
+                <ul class="para-text">
+                    <li>If you downloaded a binary, make sure you have added the graphqlator binary to your PATH.</li>
+                    <li>If you installed via go get, make sure you have added $GOPATH/bin to your PATH variable.</li>
+                </ul>
+            </p>
+        </section>
+        <hr>
+        </main>
     <script src="js/app.js"></script>
 </body>
 </html>
