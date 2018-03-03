@@ -1,0 +1,16 @@
+$break-xsmall-min: 1px;
+$break-xsmall-max: 320px;
+$break-small-min: 321px;
+$break-small-max: 360px;
+$break-med-min: 361px;
+$break-med-max: 412px;
+$break-large-min: 413px;
+$break-large-max: 760px;
+$break-xlarge-min: 761px;
+$break-xlarge-max: 1024px;
+
+$xsmall-device-query: "screen and (min-width: #{$break-xsmall-min}) and (max-width: #{$break-xsmall-max})";
+$small-device-query: "screen and (min-width: #{$break-small-min}) and (max-width: #{$break-small-max})";
+$med-device-query: "screen and (min-width: #{$break-med-min}) and (max-width: #{$break-med-max})";
+$large-device-query: "screen and (min-width: #{$break-large-min}) and (max-width: #{$break-large-max})";
+$xlarge-device-query: "screen and (min-width: #{$break-xlarge-min}) and (max-width: #{$break-xlarge-max})";
