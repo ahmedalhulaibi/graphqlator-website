@@ -93,7 +93,6 @@
             </p>
             <hr>
             <h2 class="heading-text -medium">Graphqlator Walkthrough</h2>
-            <h3 class="heading-text -small"></h3>
             <p class="para-text">Make sure you have graphqlator installed.</p>
             <p class="para-text">
                 <div class="code-snippet">
@@ -108,6 +107,113 @@
                     <li>If you installed via go get, make sure you have added $GOPATH/bin to your PATH variable.</li>
                 </ul>
             </p>
+            <hr>
+            <h2 class="heading-text -medium">Graphqlator Initialize</h2>
+            <p class="para-text">Create a new directory in $GOPATH/src/project-name</p>
+            <p class="para-text">
+                <div class="code-snippet">
+                    <code class="code-text">$ mkdir $GOPATH/src/project-name<br></code>
+                </div>
+            </p>
+            <p class="para-text">Navigate to your project directory</p>
+            <p class="para-text">
+                <div class="code-snippet">
+                    <code class="code-text">$ cd $GOPATH/src/project-name<br></code>
+                </div>
+            </p>
+            <p class="para-text">
+                Run the graphqlator init command. <br>
+                <div class="code-snippet">
+                    <code class="code-text">$ graphqlator init<br></code>
+                </div>
+            </p>
+            <p class="para-text">This command will have you input a project name, database type, database connection string, git repo URL and table names.</p>
+            <p class="para-text">
+                <div class="code-snippet">
+                    <code class="code-text">$ graphqlator init<br>
+                        Input project name (enter to continue): first-graphql-server<br>
+                        Input database type e.g. mysql (enter to continue): mysql<br>
+                        Input database connection string (enter to continue): ahmed:password@tcp(localhost:3306)/delivery<br>
+                        Input git repo url (enter to continue): github.com/ahmedalhulaibi/first-graphql-server<br>
+                        Input table names - Must be EXACT spelling and case (enter without input to skip)<br>
+                        Table #1 : Persons<br>
+                        Table #2 : Orders<br>
+                        Table #3 : <br>
+                    </code>
+                </div>
+            </p>
+            <p class="para-text">
+                After running the init command, you should have a file called graphqlator-pkg.json. 
+                To make changes to this config file just edit it.
+            </p>
+            <hr>
+            <h2 class="heading-text -medium">Graphqlator Generate</h2>
+            <p class="para-text">Navigate to your project directory where you created graphqlator-pkg.json</p>
+            <p class="para-text">
+                <div class="code-snippet">
+                    <code class="code-text">$ cd $GOPATH/src/project-name<br></code>
+                </div>
+            </p>
+            <p class="para-text">
+                Run the graphqlator generate command. <br>
+                <div class="code-snippet">
+                    <code class="code-text">$ graphqlator generate --update-all<br></code>
+                </div>
+            </p>
+            <p class="para-text">
+                You should now see multiple files created in your current folder.
+                <table>
+                    <tbody>
+                            <tr>
+                                <th class="heading-text -xsmall">Filename</th>
+                                <th class="heading-text -xsmall">Description</th>
+                            </tr>
+                            <tr>
+                                <td class="para-text">main.go</th>
+                                <td class="para-text">Contains GraphQL http handler.</th>
+                            </tr>
+                            <tr>
+                                <td class="para-text">gormQueries.go</th>
+                                <td class="para-text">Contains CRUD functions for each table (Not recommended to use this file in its current state).</th>
+                            </tr>
+                            <tr>
+                                <td class="para-text">graphqlFields.go</th>
+                                <td class="para-text">Graphql-Go root query fields. This includes resolver implementations. By default the resolvers functions generated will try to retrieve the first row in the database.</th>
+                            </tr>
+                            <tr>
+                                <td class="para-text">graphqlTypes.go</th>
+                                <td class="para-text">The data model defined in Graphql-Go.</th>
+                            </tr>
+                            <tr>
+                                <td class="para-text">model.go</th>
+                                <td class="para-text">The data model in the form of Go structs, derived from the database itself.</th>
+                            </tr>
+                            <tr>
+                                <td class="para-text">schema.graphql</th>
+                                <td class="para-text">The GraphQL types defined in GraphQL syntax. (Not 100% accurate in current state)</th>
+                            </tr>
+                    </tbody>
+                </table>
+            </p>
+            <p class="para-text">You can also use CLI flags to generate just one of these files. If no flags are given all files will be regenerated.</p>
+            <div class="code-snippet">
+                <code class="code-text">$ graphqlator generate --help<br>
+                    Generate GraphQL type schema from database information schema and tables defined in grapqhlator-pkg.json<br>
+                    Run 'graphqlator init' before running 'graphqlator generate'<br>
+                    <br>
+                    Usage:<br>
+                      graphqlator generate [flags]<br>
+                    <br>
+                    Flags:<br>
+                      -h, --help                 help for generate<br>
+                      -a, --update-all           update and overwrite all files<br>
+                      -q, --update-gormQueries   update and overwrite gormQueries.go<br>
+                      -g, --update-gqlFields     update and overwrite graphqlFields.go<br>
+                      -t, --update-gqlTypes      update and overwrite graphqlTypes.go<br>
+                      -m, --update-main          update and overwrite main.go<br>
+                      -u, --update-schema        update and overwrite schema.graphql<br>
+                </code>
+            </div>
         </section>
         <hr>
         </main>

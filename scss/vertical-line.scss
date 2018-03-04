@@ -1,4 +1,5 @@
+@import 'colors';
 .vertical-line {
-    border-left: thin solid #000000;
+    border-left: thin solid $borderColor;
     padding: 0 10px 0 10px;
 }
