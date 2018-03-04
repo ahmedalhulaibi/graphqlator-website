@@ -24,6 +24,9 @@
             margin: 3px;
         }
         @media #{$large-device-query} {
+            font-size: 26px;
+            padding: 10px 5px 0 5px;
+            margin: 3px;
 
         }
         @media #{$xlarge-device-query} {
