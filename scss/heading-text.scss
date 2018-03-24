@@ -1,7 +1,8 @@
 @import 'colors';
 
 .heading-text {
-    color: #80a1d4;
+    color: #003b94;
+    font-family: 'Roboto', sans-serif;
     &.-xlarge { 
         text-align: left;
         font-size: 40px;
@@ -20,14 +21,14 @@
     &.-medium {
         text-align: left;
         font-size: 25px;
-        font-weight: 300;
+        font-weight: 400;
         font-family: 'Roboto', sans-serif;
         color: $heading-medium;
     }
     &.-small {
         text-align: left;
         font-size: 20px;
-        font-weight: 300;
+        font-weight: 400;
         font-family: 'Roboto', sans-serif;
         color: $heading-small;
     }
