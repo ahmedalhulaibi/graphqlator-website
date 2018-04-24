@@ -174,11 +174,15 @@
                             </tr>
                             <tr>
                                 <td class="para-text">gormQueries.go</th>
-                                <td class="para-text">Contains CRUD functions for each table (Not recommended to use this file in its current state).</th>
+                                <td class="para-text">Contains CRUD functions for each table (These should work although they are a WIP and may change).</th>
                             </tr>
                             <tr>
                                 <td class="para-text">graphqlFields.go</th>
-                                <td class="para-text">Graphql-Go root query fields. This includes resolver implementations. By default the resolvers functions generated will try to retrieve the first row in the database.</th>
+                                <td class="para-text">Graphql-Go root query fields. This includes resolver implementations.</th>
+                            </tr>
+                            <tr>
+                                <td class="para-text">graphqlMutations.go</th>
+                                <td class="para-text">Graphql-Go root mutation fields. This includes resolver implementations.</th>
                             </tr>
                             <tr>
                                 <td class="para-text">graphqlTypes.go</th>
@@ -210,7 +214,8 @@
                       -q, --update-gormQueries   update and overwrite gormQueries.go<br>
                       -g, --update-gqlFields     update and overwrite graphqlFields.go<br>
                       -t, --update-gqlTypes      update and overwrite graphqlTypes.go<br>
-                      -m, --update-main          update and overwrite main.go<br>
+                      -m, --update-gqlMutations  update and overwrite graphqlMutations.go<br>
+                      -M, --update-main          update and overwrite main.go<br>
                       -u, --update-schema        update and overwrite schema.graphql<br>
                 </code>
             </div>
